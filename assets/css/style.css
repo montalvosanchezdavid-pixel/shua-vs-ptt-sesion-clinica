@@ -653,7 +653,31 @@ section.slide{
   padding:0.9rem 0;
   border-bottom:1px solid var(--border-soft);
   font-size:0.92rem;
+  scroll-margin-top:2rem;
+  transition:background .6s ease;
+  border-radius:8px;
 }
+.ref-item:target{
+  background:var(--accent-ttp-dim);
+  animation:refFlash 1.6s ease;
+}
+@keyframes refFlash{
+  0%{ background:rgba(51,194,214,0.25); }
+  100%{ background:var(--accent-ttp-dim); }
+}
+.cite{
+  font-size:0.68em;
+  vertical-align:super;
+  line-height:0;
+  margin-left:0.05em;
+}
+.cite a{
+  color:var(--accent-ttp);
+  text-decoration:none;
+  font-weight:600;
+  padding:0 0.05em;
+}
+.cite a:hover{ text-decoration:underline; }
 .ref-item::before{
   counter-increment:ref;
   content:'[' counter(ref) ']';
