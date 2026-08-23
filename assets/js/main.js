@@ -6,6 +6,15 @@
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
   }
 
+  /* ---------- fondos shader por sección (alternados) ---------- */
+  if(typeof window.initShaderBackground === 'function'){
+    var pathoCanvas = document.querySelector('#patho canvas.section-shader');
+    if(pathoCanvas) window.initShaderBackground(pathoCanvas, { seed: 7.0 });
+
+    var courseCanvas = document.querySelector('#course canvas.section-shader');
+    if(courseCanvas) window.initShaderBackground(courseCanvas, { seed: 2.3, offsetX: 0.6, offsetY: -0.3 });
+  }
+
   /* ---------- fecha en portada ---------- */
   var dateEl = document.getElementById('hero-date');
   if(dateEl){
