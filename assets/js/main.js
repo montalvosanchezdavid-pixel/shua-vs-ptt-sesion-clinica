@@ -6,11 +6,11 @@
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
   }
 
-  /* ---------- fondos shader por sección (alternados) ---------- */
+  /* ---------- fondo shader (solo en secciones sin animación propia) ----------
+     Se evita en #patho: esa sección ya tiene el diagrama SVG animado por
+     scroll (ScrollTrigger) y un WebGL corriendo a la vez competía por
+     recursos, dando sensación de que la animación del diagrama se "paraba". */
   if(typeof window.initShaderBackground === 'function'){
-    var pathoCanvas = document.querySelector('#patho canvas.section-shader');
-    if(pathoCanvas) window.initShaderBackground(pathoCanvas, { seed: 7.0 });
-
     var courseCanvas = document.querySelector('#course canvas.section-shader');
     if(courseCanvas) window.initShaderBackground(courseCanvas, { seed: 2.3, offsetX: 0.6, offsetY: -0.3 });
   }
