@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHUa vs PTT — Sesión clínica de Nefrología</title>
+<meta name="description" content="Caso clínico interactivo: diagnóstico diferencial entre síndrome hemolítico urémico atípico y púrpura trombocitopénica trombótica.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+
+<div id="top-controls">
+  <button class="pill-btn" id="btn-mode">Modo presentación</button>
+  <button class="pill-btn" id="btn-lang" title="Solo referencia — contenido en español">ES</button>
+</div>
+
+<nav id="progress-nav" aria-label="Navegación de secciones"></nav>
+
+<!-- ============================================================ -->
+<!-- 1. PORTADA -->
+<!-- ============================================================ -->
+<section class="slide" id="hero" data-title="Portada">
+  <div class="hero-mesh" aria-hidden="true">
+    <div class="hero-blob b1"></div>
+    <div class="hero-blob b2"></div>
+    <div class="hero-blob b3"></div>
+  </div>
+
+  <div class="hero-orb" aria-hidden="true">
+    <div class="orb-core"></div>
+    <svg class="orb-ring" viewBox="0 0 100 100">
+      <defs><path id="orb-circle" d="M 50,50 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="none"/></defs>
+      <text><textPath href="#orb-circle" startOffset="0%">SHUa · PTT · microangiopatía trombótica · SHUa · PTT ·</textPath></text>
+    </svg>
+  </div>
+
+  <div class="wrap">
+    <div class="tag-row reveal">
+      <span class="tag ttp">Hematología · PTT</span>
+      <span class="tag ahus">Nefrología · SHUa</span>
+      <span class="tag">Microangiopatías trombóticas</span>
+    </div>
+    <h1 class="reveal d1">Dos caminos, una misma urgencia:<br>SHUa vs PTT</h1>
+    <p class="sub reveal d2">Un caso real de microangiopatía trombótica como hilo conductor para diseccionar dónde se parecen, dónde divergen, y qué decisión clínica depende de saberlo a tiempo.</p>
+
+    <div class="hero-meta reveal d3">
+      <div><b>David Montalvo</b>R1 Hematología</div>
+      <div><b>HUSE</b>Sesión de rotatorio</div>
+      <div><b id="hero-date"></b>Sesión clínica</div>
+    </div>
+
+    <div class="scroll-cue reveal d4">
+      <span class="arrow">↓</span> Desliza para empezar el caso · usa las flechas ← → en modo presentación
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 2. PRESENTACIÓN DEL CASO -->
+<!-- ============================================================ -->
+<section class="slide" id="case" data-title="El caso">
+  <div class="wrap">
+    <span class="eyebrow reveal">01 · El caso</span>
+    <h2 class="reveal">Mujer de 42 años en Urgencias</h2>
+    <p class="reveal">Caso clínico compuesto con fines docentes, representativo de la presentación real de una microangiopatía trombótica. Haz clic en cada bloque para desvelar la información, en el mismo orden en que llegó al clínico.</p>
+
+    <div style="margin-top:2rem;">
+      <div class="case-block reveal" data-step="1">
+        <div class="cb-head"><span>Antecedentes personales</span><span class="cb-icon">+</span></div>
+        <div class="cb-body">
+          <p>Sin alergias medicamentosas conocidas. Hipertensión gestacional en su segundo embarazo (hace 6 años), resuelta tras el parto. Sin enfermedad renal previa conocida, sin proteinuria ni hematuria previas documentadas. No toma fármacos de forma habitual. No antecedentes familiares de enfermedad renal ni de trastornos de la coagulación.</p>
+        </div>
+      </div>
+
+      <div class="case-block reveal" data-step="2">
+        <div class="cb-head"><span>Motivo de consulta</span><span class="cb-icon">+</span></div>
+        <div class="cb-body">
+          <p>Acude a Urgencias por astenia intensa de 4 días de evolución, náuseas, y disminución del volumen urinario en las últimas 48 horas. Refiere un cuadro catarral leve con febrícula la semana previa, autolimitado. Sin diarrea, sin clínica urinaria, sin sangrado activo.</p>
+        </div>
+      </div>
+
+      <div class="case-block reveal" data-step="3">
+        <div class="cb-head"><span>Exploración física</span><span class="cb-icon">+</span></div>
+        <div class="cb-body">
+          <p>TA 152/94 mmHg, FC 96 lpm, afebril, SatO₂ 97%. Palidez mucocutánea con leve tinte ictérico conjuntival. Sin petequias ni púrpura visible. Edemas maleolares leves. Exploración neurológica <strong>sin focalidad, consciente y orientada</strong>, sin cefalea ni alteración del nivel de conciencia. Abdomen anodino, sin visceromegalias. Diuresis en las últimas 24h: 380 mL.</p>
+        </div>
+      </div>
+
+      <div class="case-block reveal" data-step="4">
+        <div class="cb-head"><span>Primera sospecha del clínico</span><span class="cb-icon">+</span></div>
+        <div class="cb-body">
+          <p>La combinación de anemia + astenia + oligoanuria + HTA de reciente aparición obliga a descartar, entre otras causas, un síndrome de <strong>microangiopatía trombótica (MAT)</strong>: se solicita analítica urgente con frotis de sangre periférica.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 3. PUNTO DE INFLEXIÓN — LABORATORIO -->
+<!-- ============================================================ -->
+<section class="slide" id="labs" data-title="Laboratorio">
+  <div class="wrap">
+    <span class="eyebrow reveal">02 · Punto de inflexión</span>
+    <h2 class="reveal">La analítica confirma la MAT</h2>
+    <p class="reveal">Tríada de anemia hemolítica microangiopática + trombocitopenia + daño de órgano (renal). Los valores se animan al entrar en pantalla — fíjate en cuáles rompen el rango de referencia.</p>
+
+    <div class="lab-grid" id="lab-grid">
+      <!-- filled by JS-friendly static markup -->
+      <div class="lab-card abn-card" data-target="72">
+        <div class="lab-head">
+          <svg class="lab-icon" viewBox="0 0 20 20"><path d="M10 2 C10 2 4 9 4 13 a6 6 0 0 0 12 0 C16 9 10 2 10 2 Z" fill="currentColor" opacity="0.85"/></svg>
+          <div class="lab-label">Hemoglobina</div>
+        </div>
+        <div class="lab-value abn"><span class="counter">0</span> g/L</div>
+        <div class="lab-ref">Ref. 120–155 · <strong>anemia</strong></div>
+        <div class="lab-bar"><span></span></div>
+      </div>
+      <div class="lab-card abn-card" data-target="34">
+        <div class="lab-head">
+          <svg class="lab-icon" viewBox="0 0 20 20"><circle cx="7" cy="8" r="3" fill="currentColor"/><circle cx="13" cy="7" r="2.4" fill="currentColor" opacity="0.7"/><circle cx="9" cy="14" r="2.6" fill="currentColor" opacity="0.85"/></svg>
+          <div class="lab-label">Plaquetas</div>
+        </div>
+        <div class="lab-value abn"><span class="counter">0</span> ×10⁹/L</div>
+        <div class="lab-ref">Ref. 150–400 · <strong>trombopenia grave</strong></div>
+        <div class="lab-bar"><span></span></div>
+      </div>
+      <div class="lab-card abn-card" data-target="1480">
+        <div class="lab-head">
+          <svg class="lab-icon" viewBox="0 0 20 20"><path d="M11 1 L4 12 L9 12 L8 19 L16 8 L11 8 Z" fill="currentColor"/></svg>
+          <div class="lab-label">LDH</div>
+        </div>
+        <div class="lab-value abn"><span class="counter">0</span> U/L</div>
+        <div class="lab-ref">Ref. &lt;250 · <strong>hemólisis intensa</strong></div>
+        <div class="lab-bar"><span></span></div>
+      </div>
+      <div class="lab-card abn-card" data-target="0">
+        <div class="lab-head">
+          <svg class="lab-icon" viewBox="0 0 20 20"><path d="M10 1 L17 4 V9 C17 14 14 17 10 19 C6 17 3 14 3 9 V4 Z" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="4" y1="17" x2="16" y2="3" stroke="currentColor" stroke-width="1.5"/></svg>
+          <div class="lab-label">Haptoglobina</div>
+        </div>
+        <div class="lab-value abn">Indetectable</div>
+        <div class="lab-ref">Ref. 30–200 mg/dL</div>
+        <div class="lab-bar"><span></span></div>
+      </div>
+      <div class="lab-card abn-card" data-target="4.1">
+        <div class="lab-head">
+          <svg class="lab-icon" viewBox="0 0 20 20"><path d="M10 2 L17 10 L10 18 L3 10 Z" fill="currentColor" opacity="0.85"/></svg>
+          <div class="lab-label">Bilirrubina indirecta</div>
+        </div>
+        <div class="lab-value abn"><span class="counter">0</span> mg/dL</div>
+        <div class="lab-ref">Ref. &lt;1.0</div>
+        <div class="lab-bar"><span></span></div>
+      </div>
+      <div class="lab-card abn-card" data-target="6" data-decimals="1">
+        <div class="lab-head">
+          <svg class="lab-icon" viewBox="0 0 20 20"><polygon points="10,2 12,8 18,8 13,12 15,18 10,14 5,18 7,12 2,8 8,8" fill="currentColor"/></svg>
+          <div class="lab-label">Esquistocitos (frotis)</div>
+        </div>
+        <div class="lab-value abn"><span class="counter">0</span> %</div>
+        <div class="lab-ref">Ref. &lt;1% · confirma MAT</div>
+        <div class="lab-bar"><span></span></div>
+      </div>
+      <div class="lab-card abn-card" data-target="4.8">
+        <div class="lab-head">
+          <svg class="lab-icon" viewBox="0 0 20 20"><path d="M13 2 C8 2 5 6 5 10 C5 14 8 18 13 18 C10 15 9 12 11 10 C9 8 10 5 13 2 Z" fill="currentColor" opacity="0.85"/></svg>
+          <div class="lab-label">Creatinina</div>
+        </div>
+        <div class="lab-value abn"><span class="counter">0</span> mg/dL</div>
+        <div class="lab-ref">Basal desconocida · <strong>FRA</strong></div>
+        <div class="lab-bar"><span></span></div>
+      </div>
+      <div class="lab-card abn-card" data-target="18">
+        <div class="lab-head">
+          <svg class="lab-icon" viewBox="0 0 20 20"><path d="M3 15 a7 7 0 0 1 14 0" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="10" y1="15" x2="14" y2="9" stroke="currentColor" stroke-width="1.6"/><circle cx="10" cy="15" r="1.4" fill="currentColor"/></svg>
+          <div class="lab-label">FG estimado</div>
+        </div>
+        <div class="lab-value abn"><span class="counter">0</span> mL/min</div>
+        <div class="lab-ref">CKD-EPI · <strong>estadio 4–5</strong></div>
+        <div class="lab-bar"><span></span></div>
+      </div>
+    </div>
+
+    <div class="pin-progress" id="labs-pin-progress">
+      Desliza para revelar cada valor · <span id="labs-pin-count">0 / 8</span>
+      <div class="bar"><span id="labs-pin-bar"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 4. DIAGNÓSTICO DIFERENCIAL INTERACTIVO -->
+<!-- ============================================================ -->
+<section class="slide" id="ddx" data-title="Diferencial">
+  <div class="wrap">
+    <span class="eyebrow reveal">03 · Diagnóstico diferencial</span>
+    <h2 class="reveal">Misma tríada, ¿qué mecanismo hay detrás?</h2>
+    <p class="reveal">Con cada nuevo dato, elige tu hipótesis. No hay penalización — el objetivo es razonar en tiempo real, como ocurrió en la guardia.</p>
+
+    <div id="quiz-container">
+      <div class="quiz-step reveal" data-qid="1">
+        <div class="q-prompt"><strong>Dato:</strong> MAT con daño renal predominante, sin clínica neurológica, sin diarrea previa franca. ¿Primera hipótesis de trabajo?</div>
+        <div class="q-options">
+          <button class="q-opt" data-correct="false">SHU típico (Shiga-toxina)</button>
+          <button class="q-opt" data-correct="true">PTT o SHUa — indistinguibles aún sin ADAMTS13</button>
+          <button class="q-opt" data-correct="false">CID por sepsis</button>
+          <button class="q-opt" data-correct="false">Síndrome HELLP</button>
+        </div>
+        <div class="q-feedback">Correcto en cuanto al razonamiento: <strong>a pie de cama, PTT y SHUa son clínicamente indistinguibles</strong>. La ausencia de diarrea hace menos probable el SHU típico; no hay embarazo actual que sugiera HELLP; la ausencia de sepsis franca y de alteración de la coagulación (fibrinógeno normal) aleja la CID. La guía ISTH recomienda <strong>no esperar al ADAMTS13</strong> para actuar: se calcula un PLASMIC score y se inicia manejo empírico.</div>
+      </div>
+
+      <div class="quiz-step reveal" data-qid="2">
+        <div class="q-prompt"><strong>Dato:</strong> PLASMIC score = 5 (riesgo intermedio: plaquetas &lt;30, hemólisis presente, sin cáncer activo, sin trasplante, VCM normal, INR normal, <strong>creatinina &gt;2.0 mg/dL</strong> — este último ítem resta puntos). ¿Qué haces mientras se procesa el ADAMTS13?</div>
+        <div class="q-options">
+          <button class="q-opt" data-correct="false">Esperar el resultado antes de tratar</button>
+          <button class="q-opt" data-correct="true">Extraer muestra para ADAMTS13 e iniciar PLEX empírico + corticoides</button>
+          <button class="q-opt" data-correct="false">Iniciar eculizumab de entrada</button>
+          <button class="q-opt" data-correct="false">Transfundir plaquetas profilácticas</button>
+        </div>
+        <div class="q-feedback">La creatinina elevada <strong>reduce</strong> la probabilidad pre-test de PTT en el PLASMIC score (típicamente PTT cursa con función renal más conservada), lo que ya empieza a inclinar la balanza hacia SHUa — pero el score es orientativo, no diagnóstico. La conducta correcta y avalada por la guía ISTH 2020/2025 es <strong>no demorar tratamiento</strong>: extraer la muestra de ADAMTS13 (actividad + inhibidor) y comenzar plasmaféresis (PLEX) + corticoides sin esperar el resultado. <strong>Transfundir plaquetas está contraindicado</strong> salvo sangrado grave, por riesgo de alimentar la microtrombosis.</div>
+      </div>
+
+      <div class="quiz-step reveal" data-qid="3">
+        <div class="q-prompt"><strong>Dato revelado a las 48h:</strong> ADAMTS13 = 45% (actividad normal/no consistente con PTT), sin inhibidor detectable. ¿Cómo reinterpretas el caso?</div>
+        <div class="q-options">
+          <button class="q-opt" data-correct="false">Mantener PLEX indefinidamente, PTT poco probable pero no descartada</button>
+          <button class="q-opt" data-correct="true">Descarta PTT con alta probabilidad → orientar a SHUa: pedir estudio de complemento y suspender PLEX</button>
+          <button class="q-opt" data-correct="false">Repetir ADAMTS13 en 24h antes de cambiar de rumbo</button>
+        </div>
+        <div class="q-feedback">Un ADAMTS13 &gt;20% prácticamente <strong>excluye PTT</strong> (el punto de corte diagnóstico es &lt;10%; por debajo de 20% se recomienda valorar según juicio clínico). Con 45% el diagnóstico de PTT es muy improbable. Toca <strong>pivotar el diagnóstico hacia SHUa</strong>: se solicita estudio de complemento completo (C3, C4, factor H, factor I, MCP/CD46, anticuerpos anti-factor H) y estudio genético, y se plantea suspender PLEX e iniciar bloqueo del complemento.</div>
+      </div>
+    </div>
+
+    <div class="dx-reveal" id="dx-reveal">
+      <h3>Diagnóstico final</h3>
+      <p><strong>Síndrome Hemolítico Urémico atípico (SHUa)</strong>, probablemente desencadenado por el proceso infeccioso viral banal de la semana previa (evento gatillo del complemento), en el contexto de una variante genética predisponente.</p>
+      <p style="margin-bottom:0;">Complemento: C3 <strong>68 mg/dL</strong> (bajo, ref. 90–180), C4 normal, Factor H <strong>bajo</strong>, Factor I normal, MCP/CD46 normal, anticuerpos anti-factor H <strong>negativos</strong>. Estudio genético: variante heterocigota probablemente patogénica en <strong>CFH</strong> + haplotipo de riesgo en <strong>MCP</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 5. FISIOPATOLOGÍA COMPARADA -->
+<!-- ============================================================ -->
+<section class="slide" id="patho" data-title="Fisiopatología">
+  <div class="wrap">
+    <span class="eyebrow reveal">04 · Fisiopatología comparada</span>
+    <h2 class="reveal">Dos fallos, dos sistemas distintos</h2>
+    <p class="reveal">Misma lesión final —microtrombos ricos en plaquetas ocluyendo la microcirculación— por vías completamente distintas.</p>
+
+    <div class="patho-grid">
+      <!-- PTT panel -->
+      <div class="patho-panel ttp reveal">
+        <h3><span class="tag ttp">PTT</span> Eje ADAMTS13 – FvW</h3>
+        <svg viewBox="0 0 340 220" id="svg-ttp">
+          <defs>
+            <path id="path-ttp" d="M170,178 C148,150 188,132 162,104 C140,80 182,60 168,34 C158,18 168,10 168,8" fill="none"/>
+          </defs>
+
+          <rect class="vessel-lumen" x="12" y="10" width="316" height="200" rx="14"/>
+
+          <!-- endotelio -->
+          <rect class="endo-cell" x="20" y="178" width="42" height="26" rx="6"/>
+          <rect class="endo-cell" x="66" y="178" width="42" height="26" rx="6"/>
+          <rect class="endo-cell" x="112" y="178" width="42" height="26" rx="6"/>
+          <rect class="endo-cell" x="158" y="178" width="42" height="26" rx="6"/>
+          <rect class="endo-cell" x="204" y="178" width="42" height="26" rx="6"/>
+          <rect class="endo-cell" x="250" y="178" width="42" height="26" rx="6"/>
+          <text x="170" y="213" text-anchor="middle" class="scene-caption">endotelio</text>
+
+          <!-- FvW ultra-largo sin cortar (dibujo animado al scroll) -->
+          <use href="#path-ttp" stroke="var(--accent-ttp)" stroke-width="3" fill="none" class="draw-path" id="line-ttp"/>
+          <text x="120" y="16" class="scene-caption">FvW ultra-largo, sin cortar</text>
+
+          <!-- plaquetas ancladas al multímero -->
+          <ellipse class="platelet" cx="163" cy="150" rx="6" ry="4"/>
+          <ellipse class="platelet" cx="182" cy="126" rx="6" ry="4"/>
+          <ellipse class="platelet" cx="149" cy="106" rx="5.5" ry="4"/>
+          <ellipse class="platelet" cx="174" cy="80" rx="6" ry="4"/>
+          <ellipse class="platelet" cx="154" cy="56" rx="5" ry="3.5"/>
+
+          <!-- plaquetas llegando (animadas) -->
+          <circle r="4.5" fill="var(--accent-ttp)" class="flow-dot" id="dot-ttp-1"><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#path-ttp"/></animateMotion></circle>
+          <circle r="4.5" fill="var(--accent-ttp)" class="flow-dot" id="dot-ttp-2"><animateMotion dur="3s" begin="1.2s" repeatCount="indefinite"><mpath href="#path-ttp"/></animateMotion></circle>
+
+          <!-- ADAMTS13 bloqueado -->
+          <g transform="translate(255,32)" class="enzyme-icon blocked">
+            <circle cx="0" cy="0" r="16"/>
+            <line x1="-8" y1="-8" x2="8" y2="8"/>
+            <line x1="8" y1="-8" x2="-8" y2="8"/>
+          </g>
+          <text x="255" y="60" text-anchor="middle" class="scene-caption">ADAMTS13 inhibido</text>
+
+          <!-- esquistocitos vs eritrocito íntegro -->
+          <ellipse class="rbc-shape intact" cx="45" cy="150" rx="10" ry="6"/>
+          <text x="45" y="168" text-anchor="middle" class="scene-caption">eritrocito íntegro</text>
+
+          <polygon class="rbc-shape" points="268,148 279,140 292,146 288,159 275,161"/>
+          <polygon class="rbc-shape" points="296,158 307,151 316,160 309,171 298,168"/>
+          <text x="296" y="184" text-anchor="middle" class="scene-caption">esquistocitos</text>
+        </svg>
+        <ul class="patho-steps">
+          <li><b>1.</b> Deficiencia grave de <b>ADAMTS13</b> (&lt;10%) — autoinmune (autoanticuerpos IgG) o congénita (Sd. Upshaw-Schulman).</li>
+          <li><b>2.</b> Los multímeros ultra-largos de <b>factor von Willebrand</b> no se fragmentan y quedan anclados al endotelio.</li>
+          <li><b>3.</b> Las plaquetas se adhieren en cascada a estos multímeros → <b>microtrombos plaquetarios</b> diseminados.</li>
+          <li><b>4.</b> Isquemia predominante en <b>SNC, corazón, riñón</b> — pero la afectación renal suele ser más leve que en SHUa.</li>
+        </ul>
+      </div>
+
+      <!-- aHUS panel -->
+      <div class="patho-panel ahus reveal">
+        <h3><span class="tag ahus">SHUa</span> Vía alterna del complemento</h3>
+        <svg viewBox="0 0 340 220" id="svg-ahus">
+          <defs>
+            <path id="path-ahus" d="M34,196 L34,140 L150,140 L150,104" fill="none"/>
+          </defs>
+
+          <rect class="vessel-lumen" x="12" y="10" width="316" height="200" rx="14"/>
+          <text x="20" y="26" class="scene-caption">luz capilar</text>
+
+          <!-- membrana glomerular (corte transversal) -->
+          <rect class="membrane-outer" x="12" y="92" width="316" height="18"/>
+          <rect class="membrane-inner" x="12" y="110" width="316" height="14"/>
+          <text x="320" y="86" text-anchor="end" class="scene-caption">endotelio glomerular</text>
+
+          <!-- gatillo infeccioso -->
+          <g transform="translate(34,204)" class="trigger-icon">
+            <circle r="9"/>
+            <circle r="2.2" cx="-9" cy="-4"/>
+            <circle r="2.2" cx="9" cy="-4"/>
+            <circle r="2.2" cx="0" cy="9"/>
+          </g>
+          <text x="34" y="20" text-anchor="middle" class="scene-caption">gatillo (infección)</text>
+
+          <!-- activación del complemento (dibujo animado) -->
+          <use href="#path-ahus" stroke="var(--accent-ahus)" stroke-width="3" fill="none" class="draw-path" id="line-ahus"/>
+
+          <circle r="4.5" fill="var(--accent-ahus)" class="flow-dot" id="dot-ahus-1"><animateMotion dur="3.2s" repeatCount="indefinite"><mpath href="#path-ahus"/></animateMotion></circle>
+          <circle r="4.5" fill="var(--accent-ahus)" class="flow-dot" id="dot-ahus-2"><animateMotion dur="3.2s" begin="1.1s" repeatCount="indefinite"><mpath href="#path-ahus"/></animateMotion></circle>
+
+          <circle class="node-c3" cx="90" cy="140" r="4"/>
+          <circle class="node-c3" cx="150" cy="122" r="4"/>
+
+          <!-- factor H insuficiente -->
+          <g transform="translate(195,106)" class="shield-icon failing">
+            <path d="M0,-12 L11,-6 L11,6 C11,14 0,18 0,18 C0,18 -11,14 -11,6 L-11,-6 Z"/>
+          </g>
+          <text x="195" y="46" text-anchor="middle" class="scene-caption">factor H insuficiente</text>
+
+          <!-- complejo de ataque de membrana -->
+          <circle class="mac-pore" cx="150" cy="104" r="9"/>
+          <line class="mac-leak" x1="150" y1="112" x2="140" y2="134"/>
+          <line class="mac-leak" x1="150" y1="112" x2="150" y2="138"/>
+          <line class="mac-leak" x1="150" y1="112" x2="160" y2="134"/>
+          <text x="150" y="70" text-anchor="middle" class="scene-caption">C5b-9 (MAC) sin freno</text>
+
+          <!-- daño tisular: esquistocito -->
+          <polygon class="rbc-shape" points="225,150 236,142 248,148 244,160 232,162"/>
+          <ellipse class="rbc-shape intact" cx="270" cy="170" rx="10" ry="6"/>
+          <text x="248" y="180" text-anchor="middle" class="scene-caption">daño tisular</text>
+        </svg>
+        <ul class="patho-steps">
+          <li><b>1.</b> Mutaciones germinales o anticuerpos que <b>desregulan la vía alterna</b>: pérdida de función de factor H, factor I, MCP/CD46 — o ganancia de función de C3/factor B.</li>
+          <li><b>2.</b> Activación descontrolada del complemento sobre el <b>endotelio glomerular</b>, amplificada por un evento gatillo (infección, embarazo, cirugía, fármacos).</li>
+          <li><b>3.</b> Formación del <b>complejo de ataque de membrana (C5b-9)</b> → daño endotelial directo, trombosis local.</li>
+          <li><b>4.</b> Afectación renal <b>predominante y grave</b>, con riesgo elevado de progresión a ERC terminal si no se trata.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pin-progress" id="patho-pin-progress">
+      Desliza para desplegar el mecanismo completo
+      <div class="bar"><span id="patho-pin-bar"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 6. TABLA COMPARATIVA -->
+<!-- ============================================================ -->
+<section class="slide" id="table" data-title="Comparativa">
+  <div class="wrap">
+    <span class="eyebrow reveal">05 · Cara a cara</span>
+    <h2 class="reveal">SHUa vs PTT — tabla comparativa</h2>
+    <p class="reveal">Haz clic en cualquier fila para ampliar el detalle clínico.</p>
+
+    <table class="cmp-table reveal">
+      <thead>
+        <tr><th>Dominio</th><th class="ttp-col">PTT</th><th class="ahus-col">SHUa</th></tr>
+      </thead>
+      <tbody id="cmp-body">
+        <tr class="cmp-row" data-detail="0">
+          <td>Mecanismo</td><td>Déficit/inhibición ADAMTS13</td><td>Desregulación complemento alterno</td>
+        </tr>
+        <tr class="cmp-detail" id="detail-0"><td colspan="3">La PTT es un fallo en el "corte" del factor von Willebrand; el SHUa es un fallo en el "freno" del complemento sobre el endotelio. Ambos convergen en microtrombos ricos en plaquetas, pero con distinto órgano diana predominante.</td></tr>
+
+        <tr class="cmp-row" data-detail="1">
+          <td>Prueba clave</td><td>Actividad de ADAMTS13 &lt;10%</td><td>Estudio de complemento + genética (por exclusión de PTT/SHU típico)</td>
+        </tr>
+        <tr class="cmp-detail" id="detail-1"><td colspan="3">El SHUa sigue siendo, en gran medida, un <strong>diagnóstico de exclusión</strong>: se confirma tras descartar PTT (ADAMTS13 &gt;10–20%) y SHU típico (Shiga-toxina negativo), apoyado por hallazgos de complemento y/o genética — que pueden tardar semanas y en 30–50% de los casos no muestran mutación identificable.</td></tr>
+
+        <tr class="cmp-row" data-detail="2">
+          <td>Órgano predominante</td><td>Neurológico &gt; renal</td><td>Renal &gt; resto</td>
+        </tr>
+        <tr class="cmp-detail" id="detail-2"><td colspan="3">No son reglas absolutas: existe solapamiento clínico real. Un FRA grave con oligoanuria orienta más a SHUa; clínica neurológica fluctuante (confusión, focalidad, convulsiones) orienta más a PTT.</td></tr>
+
+        <tr class="cmp-row" data-detail="3">
+          <td>Tratamiento de primera línea</td><td>Plasmaféresis (PLEX) + corticoides + <strong>caplacizumab</strong> + rituximab si PTTi</td><td>Bloqueo del complemento: <strong>eculizumab / ravulizumab</strong></td>
+        </tr>
+        <tr class="cmp-detail" id="detail-3"><td colspan="3">El PLEX <strong>no trata</strong> el mecanismo del SHUa (no repone ningún factor deficiente de forma sostenida) y retrasa el inicio del anti-C5. Por eso la ventana de "PLEX empírico" debe ser corta y reevaluarse en cuanto llega el ADAMTS13.</td></tr>
+
+        <tr class="cmp-row" data-detail="4">
+          <td>Urgencia terapéutica</td><td>Extrema — mortalidad &gt;90% sin tratamiento, PLEX en &lt;4-8h</td><td>Alta — daño renal irreversible si se demora el bloqueo C5</td>
+        </tr>
+        <tr class="cmp-detail" id="detail-4"><td colspan="3">La PTT no tratada es una emergencia hematológica con mortalidad casi universal en días; el SHUa no tratado progresa a ERC terminal en semanas a meses, con recurrencia frecuente incluso tras trasplante renal si no se anticipa el bloqueo del complemento.</td></tr>
+
+        <tr class="cmp-row" data-detail="5">
+          <td>Pronóstico con tratamiento</td><td>Recuperación hematológica en días; riesgo de recaída 30–40%</td><td>Recuperación renal variable; riesgo de recurrencia sin profilaxis mantenida</td>
+        </tr>
+        <tr class="cmp-detail" id="detail-5"><td colspan="3">En PTT autoinmune, rituximab reduce recaídas al eliminar el clon B productor de autoanticuerpos anti-ADAMTS13. En SHUa, la duración óptima del anti-C5 (indefinida vs. suspensión guiada) sigue siendo un área activa de investigación y de decisión individualizada.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 7. MANEJO Y EVOLUCIÓN -->
+<!-- ============================================================ -->
+<section class="slide" id="course" data-title="Evolución">
+  <div class="wrap">
+    <span class="eyebrow reveal">06 · Manejo y evolución</span>
+    <h2 class="reveal">Línea temporal del tratamiento</h2>
+
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-day">Día 0</div>
+        <h4>Ingreso + PLEX empírico</h4>
+        <p>Se extrae ADAMTS13 y complemento. Inicio de plasmaféresis diaria + corticoides IV (metilprednisolona) ante sospecha de MAT sin diagnóstico confirmado. Inicio de hemodiálisis por oligoanuria e hiperpotasemia.</p>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-day">Día 2</div>
+        <h4>Plaquetas en ascenso, función renal sin mejoría</h4>
+        <p>Plaquetas 34 → 89 ×10⁹/L tras 2 sesiones de PLEX. LDH en descenso. Persiste anuria y necesidad de diálisis — dato discordante que ya hace dudar de que el PLEX esté tratando el mecanismo de fondo.</p>
+      </div>
+      <div class="tl-item milestone reveal">
+        <div class="tl-day">Día 2 (tarde)</div>
+        <h4>ADAMTS13: 45% — se descarta PTT</h4>
+        <p>Se suspende PLEX. Se solicitan con urgencia el estudio de complemento completo y el panel genético. Se plantea inicio de eculizumab.</p>
+      </div>
+      <div class="tl-item milestone reveal">
+        <div class="tl-day">Día 3</div>
+        <h4>Primera dosis de eculizumab</h4>
+        <p>Tras vacunación frente a meningococo (o profilaxis antibiótica puente si no hay margen de 2 semanas), se administra la dosis de inducción de eculizumab (900 mg IV). Continúa hemodiálisis.</p>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-day">Semana 2</div>
+        <h4>Resultado de complemento y genética</h4>
+        <p>C3 bajo, factor H bajo, anti-factor H negativo. Variante patogénica en CFH + haplotipo de riesgo en MCP. Confirma SHUa complemento-mediado. Continúa fase de inducción de eculizumab (dosis semanales).</p>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-day">Semana 5</div>
+        <h4>Recuperación parcial de función renal</h4>
+        <p>Reinicio de diuresis progresivo. Se suspende hemodiálisis. Creatinina en descenso (2.4 mg/dL). Plaquetas y LDH normalizados desde la semana 2.</p>
+      </div>
+      <div class="tl-item milestone reveal">
+        <div class="tl-day">Mes 3</div>
+        <h4>Transición a ravulizumab</h4>
+        <p>Se cambia a ravulizumab (dosificación cada 8 semanas) para mantenimiento, mejorando calidad de vida y adherencia respecto a las infusiones quincenales de eculizumab.</p>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-day">Mes 12</div>
+        <h4>Situación actual</h4>
+        <p>FG estabilizado en torno a 42 mL/min (ERC estadio 3b), sin nuevos episodios de MAT. Continúa bloqueo del complemento mantenido; decisión de duración se revisa de forma individualizada en comité.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 8. TEACHING PEARLS -->
+<!-- ============================================================ -->
+<section class="slide" id="pearls" data-title="Puntos clave">
+  <div class="wrap">
+    <span class="eyebrow reveal">07 · Teaching pearls</span>
+    <h2 class="reveal">Lo que hay que llevarse a la guardia</h2>
+    <p class="reveal">Clic en cada tarjeta para ver el reverso.</p>
+
+    <div class="card-grid" id="pearl-grid">
+      <div class="flip-card reveal">
+        <div class="flip-inner">
+          <div class="flip-face flip-front"><div class="num">01</div><h4>Trata antes de tener el ADAMTS13</h4></div>
+          <div class="flip-face flip-back">Ante una MAT sin causa clara, inicia PLEX + corticoides de forma empírica. El retraso en tratar una PTT real es lo que mata; el retraso en identificar un SHUa es lo que deja secuelas renales.</div>
+        </div>
+      </div>
+      <div class="flip-card reveal">
+        <div class="flip-inner">
+          <div class="flip-face flip-front"><div class="num">02</div><h4>ADAMTS13 &lt;10% = PTT</h4></div>
+          <div class="flip-face flip-back">Por debajo del 10% el diagnóstico de PTT es prácticamente seguro. Entre 10–20% la zona es gris: exige juicio clínico, repetición de la prueba y estrecha vigilancia — no una regla automática.</div>
+        </div>
+      </div>
+      <div class="flip-card reveal">
+        <div class="flip-inner">
+          <div class="flip-face flip-front"><div class="num">03</div><h4>No transfundas plaquetas "porque están bajas"</h4></div>
+          <div class="flip-face flip-back">En sospecha de MAT, la transfusión profiláctica de plaquetas puede alimentar la microtrombosis y empeorar el pronóstico. Resérvala para sangrado activo grave.</div>
+        </div>
+      </div>
+      <div class="flip-card reveal">
+        <div class="flip-inner">
+          <div class="flip-face flip-front"><div class="num">04</div><h4>El SHUa sigue siendo un diagnóstico de exclusión</h4></div>
+          <div class="flip-back flip-face">Hasta un 30–50% de los pacientes con SHUa no tienen mutación identificada en el panel genético estándar. Ausencia de mutación <strong>no descarta</strong> el diagnóstico si el cuadro clínico y la exclusión de otras causas son consistentes.</div>
+        </div>
+      </div>
+      <div class="flip-card reveal">
+        <div class="flip-inner">
+          <div class="flip-face flip-front"><div class="num">05</div><h4>El gatillo no es la causa</h4></div>
+          <div class="flip-face flip-back">Infecciones, embarazo, cirugía o ciertos fármacos "destapan" un SHUa en un paciente con predisposición genética/funcional del complemento — no lo causan por sí solos. Busca siempre la predisposición de fondo.</div>
+        </div>
+      </div>
+      <div class="flip-card reveal">
+        <div class="flip-inner">
+          <div class="flip-face flip-front"><div class="num">06</div><h4>Vacuna antimeningocócica antes del anti-C5</h4></div>
+          <div class="flip-face flip-back">Bloquear C5 aumenta el riesgo de infección por Neisseria meningitidis. Vacuna (tetravalente ACWY + serogrupo B) 2 semanas antes si es posible, o profilaxis antibiótica puente si la urgencia no lo permite.</div>
+        </div>
+      </div>
+      <div class="flip-card reveal">
+        <div class="flip-inner">
+          <div class="flip-face flip-front"><div class="num">07</div><h4>Overlap real: causas secundarias de MAT</h4></div>
+          <div class="flip-face flip-back">Embarazo/HELLP, HTA maligna, fármacos (inhibidores de calcineurina, quimioterápicos), enfermedades autoinmunes y trasplante pueden producir un fenotipo de MAT secundaria que imita a ambas entidades — investígalas siempre en paralelo.</div>
+        </div>
+      </div>
+      <div class="flip-card reveal">
+        <div class="flip-inner">
+          <div class="flip-face flip-front"><div class="num">08</div><h4>Caplacizumab no sustituye al PLEX</h4></div>
+          <div class="flip-face flip-back">En PTT inmune, caplacizumab se añade al PLEX y corticoides (no lo reemplaza), acelera la recuperación plaquetaria y reduce eventos tromboembólicos — pero aumenta el riesgo de sangrado y exige inmunosupresión (rituximab) para tratar la causa de fondo.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 9. BIBLIOGRAFÍA -->
+<!-- ============================================================ -->
+<section class="slide" id="refs" data-title="Bibliografía">
+  <div class="wrap">
+    <span class="eyebrow reveal">08 · Bibliografía</span>
+    <h2 class="reveal">Referencias</h2>
+    <p class="reveal">Formato Vancouver.</p>
+
+    <div class="ref-list reveal">
+      <div class="ref-item"><div>Zheng XL, Vesely SK, Cataland SR, et al. ISTH guidelines for the diagnosis of thrombotic thrombocytopenic purpura. <em>J Thromb Haemost.</em> 2020;18(10):2486-2495.<br><a href="https://pubmed.ncbi.nlm.nih.gov/32914582/" target="_blank" rel="noopener">pubmed.ncbi.nlm.nih.gov/32914582</a></div></div>
+
+      <div class="ref-item"><div>ISTH TTP Guideline Panel. 2025 focused update of the 2020 ISTH guidelines for management of thrombotic thrombocytopenic purpura. <em>J Thromb Haemost.</em> 2025.<br><a href="https://www.jthjournal.org/article/S1538-7836(25)00360-5/fulltext" target="_blank" rel="noopener">jthjournal.org</a></div></div>
+
+      <div class="ref-item"><div>Scully M, Cataland SR, Peyvandi F, et al. Caplacizumab treatment for acquired thrombotic thrombocytopenic purpura (HERCULES trial). <em>N Engl J Med.</em> 2019;380(4):335-346.<br><a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1806311" target="_blank" rel="noopener">nejm.org/doi/full/10.1056/NEJMoa1806311</a></div></div>
+
+      <div class="ref-item"><div>Bendapudi PK, Hurwitz S, Fry A, et al. Derivation and external validation of the PLASMIC score for rapid assessment of adult patients with thrombotic microangiopathies (PLASMIC score). <em>Lancet Haematol.</em> 2017;4(4):e157-e164.</div></div>
+
+      <div class="ref-item"><div>Goodship THJ, Cook HT, Fakhouri F, et al. Atypical hemolytic uremic syndrome and C3 glomerulopathy: conclusions from a Kidney Disease: Improving Global Outcomes (KDIGO) Controversies Conference. <em>Kidney Int.</em> 2017;91(3):539-551 (con actualizaciones posteriores de las conferencias KDIGO sobre complemento).</div></div>
+
+      <div class="ref-item"><div>Cavero T, Rabasco C, López A, et al / George JN, Nester CM. Atypical hemolytic uremic syndrome: diagnosis, management, and discontinuation of therapy. <em>Hematology Am Soc Hematol Educ Program.</em> 2024;2024(1):200-206.<br><a href="https://ashpublications.org/hematology/article/2024/1/200/526220/" target="_blank" rel="noopener">ashpublications.org</a></div></div>
+
+      <div class="ref-item"><div>Chaturvedi S, Braunstein EM, Brodsky RA. Medical consult: aHUS, TTP? How to distinguish and what to do. <em>Hematology Am Soc Hematol Educ Program.</em> 2023;2023(1):745-751.<br><a href="https://ashpublications.org/hematology/article/2023/1/745/506485/" target="_blank" rel="noopener">ashpublications.org</a></div></div>
+
+      <div class="ref-item"><div>ERKNet Working Group. Atypical Hemolytic Uremic Syndrome — guideline/pathway.<br><a href="https://www.erknet.org/guidelines-pathways/thrombotic-microangiopathies/atypical-hemolytic-uremic-syndrome" target="_blank" rel="noopener">erknet.org</a></div></div>
+
+      <div class="ref-item"><div>Fakhouri F, Zuber J, Frémeaux-Bacchi V, Loirat C. Haemolytic uraemic syndrome. <em>Lancet.</em> 2017;390(10095):681-696.</div></div>
+
+      <div class="ref-item"><div>Legendre CM, Licht C, Muus P, et al. Terminal complement inhibitor eculizumab in atypical hemolytic-uremic syndrome. <em>N Engl J Med.</em> 2013;368(23):2169-2181.</div></div>
+
+      <div class="ref-item"><div>Rondeau E, Scully M, Ariceta G, et al. The long-acting C5 inhibitor ravulizumab is effective and safe in adult patients with atypical hemolytic uremic syndrome naïve to complement inhibitor treatment. <em>Kidney Int.</em> 2020;97(6):1287-1296.</div></div>
+
+      <div class="ref-item"><div>PLASMIC score to aid diagnosis of aHUS: an analysis of C5 inhibitor clinical trials and the PINC AI™ healthcare database. 2024.<br><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12080142/" target="_blank" rel="noopener">pmc.ncbi.nlm.nih.gov/PMC12080142</a></div></div>
+    </div>
+
+    <footer class="end">
+      Sesión clínica elaborada para el rotatorio de Nefrología · caso clínico compuesto con fines docentes · David Montalvo, R1 Hematología · HUSE
+    </footer>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
