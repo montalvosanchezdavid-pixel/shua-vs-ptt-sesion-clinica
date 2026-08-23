@@ -150,10 +150,12 @@ section.slide{
   align-items:center;
 }
 .pill-btn{
+  display:inline-block;
   font-family:var(--font-mono);
   font-size:0.7rem;
   letter-spacing:0.06em;
   text-transform:uppercase;
+  text-decoration:none;
   background:rgba(17,25,40,0.85);
   backdrop-filter:blur(6px);
   border:1px solid var(--border-soft);

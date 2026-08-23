@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Índice — SHUa vs PTT</title>
+<meta name="description" content="Índice interactivo de la sesión clínica SHUa vs PTT.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/indice.css">
+</head>
+<body class="indice-page">
+
+<canvas id="indice-canvas"></canvas>
+<div class="indice-scrim" aria-hidden="true"></div>
+
+<a class="indice-back" href="index.html">← Volver a la sesión</a>
+
+<main class="indice-wrap">
+  <span class="eyebrow">SHUa vs PTT</span>
+  <h1>Índice</h1>
+  <p class="indice-sub">Toca cualquier punto para saltar directamente a esa parte de la sesión.</p>
+
+  <nav class="indice-list" aria-label="Índice de secciones">
+    <a class="indice-item" href="index.html#hero"><span class="i-num">01</span><span class="i-title">Portada</span></a>
+    <a class="indice-item" href="index.html#case"><span class="i-num">02</span><span class="i-title">El caso</span></a>
+    <a class="indice-item" href="index.html#labs"><span class="i-num">03</span><span class="i-title">Punto de inflexión — laboratorio</span></a>
+    <a class="indice-item" href="index.html#ddx"><span class="i-num">04</span><span class="i-title">Diagnóstico diferencial</span></a>
+    <a class="indice-item" href="index.html#patho"><span class="i-num">05</span><span class="i-title">Fisiopatología comparada</span></a>
+    <a class="indice-item" href="index.html#table"><span class="i-num">06</span><span class="i-title">SHUa vs PTT — tabla comparativa</span></a>
+    <a class="indice-item" href="index.html#course"><span class="i-num">07</span><span class="i-title">Manejo y evolución</span></a>
+    <a class="indice-item" href="index.html#pearls"><span class="i-num">08</span><span class="i-title">Teaching pearls</span></a>
+    <a class="indice-item" href="index.html#refs"><span class="i-num">09</span><span class="i-title">Bibliografía</span></a>
+  </nav>
+</main>
+
+<script src="assets/js/shader-bg.js"></script>
+<script>
+  var canvas = document.getElementById('indice-canvas');
+  if (window.initShaderBackground) {
+    window.initShaderBackground(canvas);
+  }
+</script>
+</body>
+</html>
